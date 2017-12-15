@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- P5 libraries -->
+		<script type="text/javascript" src="./libraries/p5.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script type="text/javascript" src="./libraries/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script type="text/javascript" src="./libraries/aframep5.js"></script>
+
+		<!-- P5 sound library -->
+		<script type="text/javascript" src="./libraries/p5.sound.min.js"></script>
+
+		<!-- P5 Sketch -->
+		<script type="text/javascript" src="sketch.js"></script>
+
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+		<a-scene id="VRScene">
+			<a-assets id="VRAssets">
+		
+			<img src="./img/beach.jpg" id="beach">
+			<img src = "./img/park.jpg" id="park">
+			<img src = "./img/prague.jpg" id="prague">
+
+			<img src = "./img/stonefloor.jpg" id="stonefloor">
+			<img src = "./img/carpet.jpg" id="carpet">
+
+			</a-assets>
+			<a-sky id="theSky" src="#prague" color="rgb(255,255,255)"></a-sky>
+		</a-scene>
+
+	</body>
+</html>
